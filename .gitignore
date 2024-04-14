@@ -1,32 +1,24 @@
-# Prerequisites
-*.d
+--[[
+B-Tool Script maked by @Triguano
+Last updated April 8, 2024
+Description: Gives your player the old system of building tools
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+Instruction: Inject this script into any game using a Lua executor like Wave. 
+]]
 
-# Precompiled Headers
-*.gch
-*.pch
+backpack = game:GetService("Players").LocalPlayer.Backpack
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+hammer = Instance.new("HopperBin")
+hammer.Name = "Hammer"
+hammer.BinType = 4
+hammer.Parent = backpack
 
-# Fortran module files
-*.mod
-*.smod
+cloneTool = Instance.new("HopperBin")
+cloneTool.Name = "Clone"
+cloneTool.BinType = 3
+cloneTool.Parent = backpack
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+grabTool = Instance.new("HopperBin")
+grabTool.Name = "Grab"
+grabTool.BinType = 2
+grabTool.Parent = backpack
